@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../EE2026_Project.srcs/sources_1/new/draw_menu.v" \
+"../../../../EE2026_Project.srcs/sources_1/new/simumenu.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

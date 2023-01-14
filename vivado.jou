@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Jan 14 21:56:03 2023
+# Process ID: 2892
+# Current directory: E:/Uni Sutff/Uni Y1 Sem 2/ee2026/ee2026 final/EE2026_Project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2824 E:\Uni Sutff\Uni Y1 Sem 2\ee2026\ee2026 final\EE2026_Project\EE2026_Project.xpr
+# Log file: E:/Uni Sutff/Uni Y1 Sem 2/ee2026/ee2026 final/EE2026_Project/vivado.log
+# Journal file: E:/Uni Sutff/Uni Y1 Sem 2/ee2026/ee2026 final/EE2026_Project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/Uni Sutff/Uni Y1 Sem 2/ee2026/ee2026 final/EE2026_Project/EE2026_Project.xpr}
+update_compile_order -fileset sources_1

@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Jan 14 21:56:03 2023
+# Process ID: 2892
+# Current directory: E:/Uni Sutff/Uni Y1 Sem 2/ee2026/ee2026 final/EE2026_Project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2824 E:\Uni Sutff\Uni Y1 Sem 2\ee2026\ee2026 final\EE2026_Project\EE2026_Project.xpr
+# Log file: E:/Uni Sutff/Uni Y1 Sem 2/ee2026/ee2026 final/EE2026_Project/vivado.log
+# Journal file: E:/Uni Sutff/Uni Y1 Sem 2/ee2026/ee2026 final/EE2026_Project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/Uni Sutff/Uni Y1 Sem 2/ee2026/ee2026 final/EE2026_Project/EE2026_Project.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/Siew Yang Zhi/Desktop/ee2026 final/EE2026_Project' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:07 . Memory (MB): peak = 903.457 ; gain = 157.605
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Jan 14 21:58:20 2023...

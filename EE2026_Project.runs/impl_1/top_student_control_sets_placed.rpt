@@ -1,0 +1,157 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sat Apr  3 15:53:54 2021
+| Host         : DESKTOP-0Q8EHNB running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_student_control_sets_placed.rpt
+| Design       : top_student
+| Device       : xc7a35ti
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    86 |
+| Unused register locations in slices containing registers |   210 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |           18 |
+|      4 |            4 |
+|      6 |            2 |
+|      8 |            6 |
+|     10 |            3 |
+|     12 |            1 |
+|     14 |            3 |
+|    16+ |           49 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             594 |          162 |
+| No           | No                    | Yes                    |             152 |           18 |
+| No           | Yes                   | No                     |             936 |          131 |
+| Yes          | No                    | No                     |             284 |           70 |
+| Yes          | No                    | Yes                    |             310 |           45 |
+| Yes          | Yes                   | No                     |             226 |           40 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------+---------------------------------------+-----------------------------------------+------------------+----------------+
+|          Clock Signal          |             Enable Signal             |             Set/Reset Signal            | Slice Load Count | Bel Load Count |
++--------------------------------+---------------------------------------+-----------------------------------------+------------------+----------------+
+|  lit_led_score/led_reg[10]/G0  |                                       |                                         |                1 |              2 |
+|  lit_led_score/led_reg[11]/G0  |                                       |                                         |                1 |              2 |
+|  lit_led_score/led_reg[2]/G0   |                                       |                                         |                1 |              2 |
+|  lit_led_score/led_reg[12]/G0  |                                       |                                         |                1 |              2 |
+|  lit_led_score/led_reg[3]/G0   |                                       |                                         |                1 |              2 |
+|  lit_led_score/led_reg[13]/G0  |                                       |                                         |                1 |              2 |
+|  lit_led_score/led_reg[14]/G0  |                                       |                                         |                1 |              2 |
+|  lit_led_score/led_reg[15]/G0  |                                       |                                         |                1 |              2 |
+|  lit_led_score/led_reg[7]/G0   |                                       |                                         |                1 |              2 |
+|  lit_led_score/led_reg[5]/G0   |                                       |                                         |                1 |              2 |
+|  lit_led_score/led_reg[4]/G0   |                                       |                                         |                1 |              2 |
+|  lit_led_score/led_reg[6]/G0   |                                       |                                         |                1 |              2 |
+|  lit_led_score/led_reg[8]/G0   |                                       |                                         |                1 |              2 |
+|  lit_led_score/led_reg[9]/G0   |                                       |                                         |                1 |              2 |
+|  clk_fast_BUFG                 |                                       | mode/p_1_in[0]                          |                1 |              2 |
+|  clk_fast_BUFG                 |                                       | gbl/High_Rating0                        |                1 |              2 |
+|  clk_fast_BUFG                 |                                       | mode/AN[1]_i_1_n_0                      |                1 |              2 |
+| ~clk62p_BUFG                   |                                       |                                         |                1 |              2 |
+|  fivesecond/clk_five           |                                       |                                         |                1 |              4 |
+|  lit_led_score/led_n_0         |                                       | lit_led_score/led_reg[1]_i_1_n_0        |                1 |              4 |
+|  threesecond/clk_three         |                                       |                                         |                1 |              4 |
+|  halfsecond/clk_half           |                                       |                                         |                1 |              4 |
+|  one_sec_signal_BUFG           |                                       |                                         |                2 |              6 |
+|  segments_clk_381/clk_segments |                                       |                                         |                1 |              6 |
+|  onesecond/clk_one             |                                       |                                         |                3 |              8 |
+|  clk_fast_BUFG                 | counts_btn_press/send_cm_reg[3][0]    |                                         |                3 |              8 |
+|  clk_fast_BUFG                 | counts_btn_press/lsb_reg[0]           | counts_btn_press/lsb_reg[0]_0           |                2 |              8 |
+|  CLK_IBUF_BUFG                 | vdt/PIXEL_DATA_reg[10]_0              | OD/PIXEL_DATA_reg[2]                    |                4 |              8 |
+|  clk_fast_BUFG                 | level_send_final0                     |                                         |                2 |              8 |
+|  clk_fast_BUFG                 | levelX_segments/Zright[5]_i_2_n_0     | levelX_segments/peak1                   |                3 |              8 |
+|  clk2_BUFG                     | SO/Left_Col[6]_i_1_n_0                |                                         |                2 |             10 |
+|  CLK_IBUF_BUFG                 |                                       | dm/RGB_reg[11]                          |                2 |             10 |
+|  CLK_IBUF_BUFG                 |                                       | dm/RGB_reg[0]                           |                2 |             10 |
+|  CLK_IBUF_BUFG                 |                                       | dm/RGB_reg[5]                           |                2 |             12 |
+|  clk_fast_BUFG                 | speedo_IBUF                           |                                         |                3 |             14 |
+|  clk2_BUFG                     | button_onbottom/dut1/E[0]             | D/dut2/AR[0]                            |                3 |             14 |
+|  CLK_IBUF_BUFG                 | vdt/PIXEL_DATA_reg[10]_0              | OD/PIXEL_DATA_reg[0]                    |                6 |             14 |
+|  clk2_BUFG                     | button_ontop/dut1/E[0]                | D/dut2/presses_reg[3][0]                |                3 |             16 |
+| ~mic/J_MIC3_Pin4_OBUF          |                                       |                                         |                7 |             24 |
+|  J_MIC3_Pin1_OBUF_BUFG         | zero/temp_reg[11][0]                  | D/dut2/AR[0]                            |                4 |             24 |
+|  onesecond/clk_one             |                                       | D/dut2/AR[0]                            |                2 |             24 |
+|  J_MIC3_Pin1_OBUF_BUFG         | set_for15/find_largest0               | D/dut2/AR[0]                            |                2 |             24 |
+|  J_MIC3_Pin1_OBUF_BUFG         | levelX_segments/counter[15]_i_1_n_0   |                                         |                4 |             24 |
+|  J_MIC3_Pin1_OBUF_BUFG         | levelX_segments/p_0_in                | levelX_segments/counter[15]_i_1_n_0     |                3 |             24 |
+|  J_MIC3_Pin1_OBUF_BUFG         | counts_btn_press/max_reg[11]_0[0]     | D/dut2/AR[0]                            |                2 |             24 |
+|  J_MIC3_Pin1_OBUF_BUFG         | return4tune/p_0_in                    | return4tune/find_largest0               |                3 |             24 |
+|  CLK_IBUF_BUFG                 |                                       | J_MIC3_Pin1_OBUF_BUFG                   |                3 |             24 |
+|  clk2_BUFG                     |                                       | return4tune/p_0_out0                    |                5 |             24 |
+|  J_MIC3_Pin1_OBUF_BUFG         | counts_btn_press/max_reg[11][0]       | D/dut2/AR[0]                            |                6 |             24 |
+|  J_MIC3_Pin1_OBUF_BUFG         | counts_btn_press/max_reg[11]_2[0]     | D/dut2/AR[0]                            |                3 |             24 |
+|  J_MIC3_Pin1_OBUF_BUFG         | five/E[0]                             | D/dut2/AR[0]                            |                4 |             24 |
+|  J_MIC3_Pin1_OBUF_BUFG         | counts_btn_press/max_reg[11]_1[0]     | D/dut2/AR[0]                            |                4 |             24 |
+|  J_MIC3_Pin1_OBUF_BUFG         | set_for0/find_largest0                | D/dut2/AR[0]                            |                3 |             24 |
+|  J_MIC3_Pin1_OBUF_BUFG         | set_for10/find_largest[11]_i_1__1_n_0 | D/dut2/AR[0]                            |                2 |             24 |
+|  J_MIC3_Pin1_OBUF_BUFG         | set_for5/find_largest0                | D/dut2/AR[0]                            |                3 |             24 |
+|  J_MIC3_Pin1_OBUF_BUFG         | ten/temp_reg[11][0]                   | D/dut2/AR[0]                            |                4 |             24 |
+|  J_MIC3_Pin1_OBUF_BUFG         | fifteen/E[0]                          | D/dut2/AR[0]                            |                4 |             24 |
+|  clk2_BUFG                     |                                       |                                         |               11 |             28 |
+|  clk2_BUFG                     | D3/dut2/E[0]                          | D3/dut2/SR[0]                           |                4 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG         |                                       |                                         |                8 |             28 |
+|  clk_fast_BUFG                 | MenuSwitch_IBUF                       |                                         |                7 |             28 |
+|  J_MIC3_Pin1_OBUF_BUFG         |                                       | levelX_segments/counter[15]_i_1_n_0     |                4 |             30 |
+|  J_MIC3_Pin1_OBUF_BUFG         |                                       | return4tune/find_largest0               |                4 |             30 |
+|  clk_fast_BUFG                 | counts_btn_press/led_reg[0][0]        |                                         |               11 |             32 |
+|  clk_fast_BUFG                 | sonarmode_IBUF                        |                                         |                6 |             32 |
+| ~clk62p_BUFG                   |                                       | D/dut2/AR[0]                            |                5 |             34 |
+|  CLK_IBUF_BUFG                 |                                       | dut3/slow0                              |                5 |             38 |
+| ~clk62p_BUFG                   | OD/delay[0]_i_1_n_0                   | D/dut2/AR[0]                            |                5 |             40 |
+|  clk11hz/value_one_reg[3]      |                                       |                                         |               13 |             48 |
+|  CLK_IBUF_BUFG                 |                                       | ck/one_sec_signal0                      |                7 |             50 |
+|  CLK_IBUF_BUFG                 |                                       | PC/PCLK0                                |                8 |             62 |
+|  clk_fast_BUFG                 | counts_btn_press/E[0]                 |                                         |               18 |             62 |
+|  CLK_IBUF_BUFG                 |                                       | clk11hz/counter[0]_i_1__18_n_0          |                8 |             64 |
+| ~clk62p_BUFG                   | OD/state                              | D/dut2/AR[0]                            |                8 |             64 |
+|  CLK_IBUF_BUFG                 |                                       | segments_clk_381/counter[0]_i_1__13_n_0 |                8 |             64 |
+|  CLK_IBUF_BUFG                 |                                       | onesecond/counter[0]_i_1__17_n_0        |                8 |             64 |
+|  CLK_IBUF_BUFG                 |                                       | halfsecond/counter[0]_i_1__16_n_0       |                8 |             64 |
+|  CLK_IBUF_BUFG                 |                                       | fivesecond/counter[0]_i_1__14_n_0       |                8 |             64 |
+|  CLK_IBUF_BUFG                 |                                       | fastest/clear                           |                8 |             64 |
+|  CLK_IBUF_BUFG                 |                                       | threesecond/counter[0]_i_1__15_n_0      |                8 |             64 |
+|  CLK_IBUF_BUFG                 |                                       | sample/clear                            |                8 |             64 |
+|  one_sec_signal_BUFG           | taptapmode_IBUF                       |                                         |               14 |             66 |
+|  CLK_IBUF_BUFG                 |                                       |                                         |               24 |             78 |
+| ~clk62p_BUFG                   |                                       | OD/spi_word[39]_i_1_n_0                 |               16 |             90 |
+|  J_MIC3_Pin1_OBUF_BUFG         |                                       | D/dut2/AR[0]                            |               16 |            128 |
+|  clk_fast_BUFG                 |                                       |                                         |               75 |            326 |
++--------------------------------+---------------------------------------+-----------------------------------------+------------------+----------------+
+
+
